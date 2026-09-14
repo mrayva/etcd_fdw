@@ -23,15 +23,15 @@ pg_test = []
 [dependencies]
 etcd-client = { version = "0.16", features = ["tls"] }
 futures = "0.3.31"
-pgrx = {version="=0.16.1"}
-supabase-wrappers = { git="https://github.com/cybertec-postgresql/wrappers.git", branch="develop", default-features = false }
+pgrx = {version="=0.17.0"}
+supabase-wrappers = { git="https://github.com/mrayva/wrappers.git", branch="develop", default-features = false }
 thiserror = "2.0.16"
 tokio = { version = "1.47.1", features = ["full"] }
 testcontainers = { version = "0.25.0", features = ["blocking"] }
 serde = { version = "1.0.226", features = ["derive"] }
 
 [dev-dependencies]
-pgrx-tests = "=0.16.1"
+pgrx-tests = "=0.17.0"
 testcontainers = { version = "0.25.0", features = ["blocking"] }
 serde = { version = "1.0.226", features = ["derive"] }
 
